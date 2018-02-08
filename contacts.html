@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <meta name="yandex-verification" content="1a1725ffcdf508d3" />
+    <meta name="viewport" content="width=device-width;">
+    <meta charset="UTF-8">
+    <title>CAXAP</title>
+    <link rel="stylesheet" href="new_style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="canonical" href="https://salon-sahar.ru/contacts.html" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($){
+            $("#phone").mask("+7(999) 999-9999");
+        });
+    </script>
+<body>
+    <header>
+        <img class="logo" src="img/scissors.png" alt="logo">
+        <div>
+            <img src="img/sugar.png" alt="CAXAP">
+        </div>
+        <!-- <ul class="social">
+           <li ><a href="#" class="facebook_icon"><img src="img/facebook_icon.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/salon_sahar77/" class="insta_icon"><img src="img/insta_icon.png" alt="instagramm"></a></li>
+               </ul> -->
+        <ul class="switch">
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="on" href="contacts.html">Контакты</a></li>
+            <p>&#128222; +7 916 960 4499</p>
+            <p>&#9200; 10:00 &#9472; 21:00 <i>ежедневно</i></p>
+        </ul>
+    </header>
+    <main>
+        <div class="bg_message">
+            <h2>Онлайн заявка</h2>
+            <form id="callbacks" action="#" method="post" name="contact">
+                <div>
+                    <input id="name" name="name" placeholder="Введите Ваше имя" />
+                    <p>Ваше имя</p>
+                </div>
+                <div>
+                    <input id="phone" name="phone" placeholder="Номер телефона" />
+                    <p>Ваш телефон</p>
+                </div>
+                <div>
+                    <input id="email" name="email" type="email" placeholder="Ваш e-mail" />
+                    <p>или e-mail</p>
+                </div>
+                <input id="welcome"  type="text" style="display:none"/>
+                <span>Текст сообщения:</span>
+                <textarea id="body" name="body" placeholder="Введите текст"></textarea>
+                <button id="send">Отправить сообщение</button>
+                <button type="reset">Очистить всё</button>
+            </form>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $("#send").click(function(){ 
+                        $.ajax({
+                            type: "POST",
+                            url:"send.php", // Адрес обработчика
+                            data:$("#callbacks").serialize(),
+                            error:function(){$("#erconts").html("Произошла ошибка!");},
+                            beforeSend: function() {
+                                $("#erconts").html("Отправляем данные...");
+                            },
+                            success: function(result){
+                                $("#erconts").html(result);
+                                checkThis();
+                                }
+                        });
+                    return false;
+                    });
+                });
+            </script>
+            <div id="erconts"></div> <!--будет информация от обработчика-->
+        </div>
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBa7yZwLhB"></iframe> -->
+<!--        <div class="clear"></div>-->
+    </main>
+    <footer>
+        <ul class="address">
+            <li><a href="index.html">На главную</a></li>
+            <li><a>Мы располагаемся по адресу г. Москва ул. Вольная д.25</a></li>
+            <li><a>Режим работы: <b>10:00-21:00</b> без обеда и выходных</a></li>
+            <li><a href="mailto:salon-sahar@bk.ru">&#9993; salon-sahar@bk.ru</a></li>
+            <li><a href="tel:+79169604499">&#9742; +7 916 960 4499</a></li>
+        </ul>
+        <a class="map" href="https://yandex.ru/maps/-/CBaCQDaxCC" target="_blank">
+            <img src="img/map_navi.png" alt="Yandex" style="width: 80px">
+            <p>Мы на карте</p>
+        </a>
+        <p>&copy; 2017 Р.А.Р.</p>
+    </footer>
+</body>
+</html> 

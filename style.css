@@ -1,0 +1,672 @@
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('font/Roboto-Italic.eot');
+    src: url('font/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Italic.woff') format('woff'),
+        url('font/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('font/Roboto-Regular.eot');
+    src: url('font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Regular.woff') format('woff'),
+        url('font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bk';
+    src: url('font/Roboto-Black.eot');
+    src: url('font/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Black.woff') format('woff'),
+        url('font/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+html {height: 100%;}
+body {height: 100%;font-family: 'Roboto-Regular';margin: 0px;padding: 0px;}
+ul {
+    list-style-type:  none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~    Header      ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+header {
+    width: 780px;
+    height: 175px;
+    background: #abeafa; 
+    margin: 0 auto;
+    position: relative;
+}
+.welcome_text {
+    font-size: .65rem;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: .65rem;
+    z-index: 255;
+}
+.welcome_to {
+    font-family: 'Roboto-Bk';
+    font-size: .97rem;
+    color: rgba(51, 51, 51, 255);
+    text-align: left;
+    line-height: 1.25rem;
+    margin-top: 0.37rem;
+    z-index: 254;
+}
+.banner_bg_welcome {
+    background-color: #ffeb06;
+    position: absolute;
+    left: 32px;
+    top: 163px;
+    width: 156px;
+    height: auto;
+    padding: 7px;
+    border-radius: 5px;
+    z-index: 10;
+}
+.social {
+    float: right;
+    margin-right: 50px;
+    margin-top: 25px;
+    display: flex;
+  z-index: 265;
+}
+.bg_social {
+    position: relative;
+    top: -175px;
+    background-color: #c9c9c9;
+    width: 45px;
+    height: 14px;
+    padding-left: 7px;
+    padding-top: 3px;
+    margin-top: 16px;
+    margin-right: 126px;
+}
+.social>li {
+    margin-top: 3px;
+}
+.social a>img {
+    height: 16px;
+}
+.insta_icon {
+  height: 32px;
+  z-index: 264;
+}
+.facebook_icon {
+  margin-right: 15px;
+  height: 32px;
+  z-index: 260;
+}
+.social>li>a>img:hover {
+    box-shadow: 0 0 3px 2px #333;
+    background: #333;
+}
+.logo {
+    height: 180px;
+    margin-left: 15px;
+    z-index: 220;
+    position: absolute;
+}
+header>div{
+    position: absolute;
+    left: 210px;
+    height: 180px;
+}
+header>div>img {height: 180px;}
+.sale {
+    height: 110px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Switch    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.switch {
+    position: absolute;
+    top: 75px;
+    right: 32px;
+    color: black;
+    font-size: .9rem;
+}
+.switch>li>a {
+    color: black;
+    padding: 3.5px 7.5px;
+    vertical-align: sub;
+    display: inline-block;
+    opacity: .4;
+}
+.switch>li {
+    float: left;
+    background: #f8f8f8;
+    /* border: 1px solid #000; */
+    margin-bottom: 12px;
+}
+.switch>p {
+    clear: both;
+    margin-top: 12px;
+}
+.switch>li>.on {
+    background-color: #e1b842;
+    opacity: .8;
+}
+.switch :first-child, .switch :first-child a{
+border-bottom-left-radius: 13px;
+border-top-left-radius: 13px;
+}
+.switch :last-child, .switch :nth-child(2) {
+border-bottom-right-radius: 13px;
+border-top-right-radius: 13px;
+}
+.switch>li>a:hover {
+    opacity: 1;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~     Main    ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main {
+    position: relative;
+    width: 780px;
+    height: 71.5%;
+    min-height: 790px;
+    background: #f8f8f8;
+    margin: 0 auto;
+}
+.price {
+    position: absolute;
+    left: 72px;
+    font-family: 'Roboto-Italic';
+    color: rgb(51, 51, 51);
+    font-style: italic;
+    padding-left: 2px;
+    z-index: 201;
+    font-weight: 600;
+}
+.title_prd {
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+.Hair {
+    position: relative;
+    left: 232px;
+    top: 32px;
+    width: 435px;
+    height: 362px;
+    background: #f8f8f8;
+    display: inline-block;
+}
+.Nails {
+    position: relative;
+    left: 232px;
+    top: 186px;
+    width: 435px;
+    height: 200px;
+    background: #f8f8f8;
+    display: inline-block;
+}
+.Hair>div {
+    position: relative;
+    background: white;
+    width: 135px;
+    height: 160px;
+    z-index: 194;
+    display: flex;
+    float: left;
+    margin: 5px;
+}
+.Nails>div {
+    position: relative;
+    background: white;
+    width: 135px;
+    height: 25px;
+    z-index: 194;
+    float: left;
+    margin: 5px;
+    border-radius: 3px;
+}
+.Hair>div:hover, .Nails>div:hover {
+    box-shadow: 0 0 2px 1px #333;
+}
+.Hair>div:hover>p:last-child, .Nails>div:hover>p:last-child {
+    font-size: .73rem;
+}
+.Hair>div>p {
+    position: absolute;
+    top: 130px;
+    margin-left: 5px;
+    font-size: .7rem;
+    font-family: 'Roboto-Italic';
+    color: rgb(51, 51, 51);
+    line-height: 1.1;
+    text-align: left;
+    width: 72px;
+}
+.Nails>div>p {
+    position: absolute;
+    top: 1.5px;
+    margin-left: 5px;
+    font-size: .67rem;
+    font-family: 'Roboto-Italic';
+    color: rgb(51, 51, 51);
+    line-height: .98;
+    text-align: left;
+    width: 95px;
+}
+.Nails>div>.price {
+    margin-left: -41px;
+    line-height: 1.2;
+    text-align: right;
+    margin-top: 3px;
+}
+#once {
+    margin-top: 5px;
+}
+.Hair>div>img {
+  background-color: rgb(234, 234, 234);
+  margin: 5px;
+  width: 125px;
+  height: 116px;
+  z-index: 197;
+}
+.bg_address {
+  background-color: #ffeb06;
+    position: absolute;
+    left: 33px;
+    top: 268px;
+    width: 156px;
+    font-size: .73rem;
+    padding: 7px;
+    border-radius: 5px;
+    z-index: 253;
+}
+.phone {
+    display: flex;
+    font-size: .63rem;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    color: #000;
+    font-weight: 900;
+}
+.email {
+    color: #000;
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.bg_address>p>img {
+    width: .81rem;
+    position: relative;
+    top: 3px;
+}
+.bg_address>p:last-child {
+    font-size: .63rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Contacts   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.clear {
+    height: 250px;
+    width: 100%;
+    background: url(img/ice_texture.jpg), no-repeat;
+    background-size: cover; 
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Message    ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.bg_message {
+    position: absolute;
+    left: 132px;
+    top: 100px;
+    width: 400px;
+    height: 420px;
+/*
+    background: url(img/credit-card-icon.png), no-repeat;
+    background-size: cover;
+*/
+    background-color: #e1b842;
+    padding: 7px;
+    z-index: 253;
+    border-radius: 8px;
+}
+.bg_message>form>div {
+    display: flex;
+}
+.bg_message>form>div>p {
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: #000 -1px 1px 2px;
+}
+.bg_message>form>div>input {
+    padding-left: 5px;
+    font-size: .6rem;
+    height: 16px;
+    width: 130px;
+    margin: 10px 15px;
+    border-radius: 3px;
+    float: left;
+}
+.bg_message>form>div>input:hover {
+    background: #e3e3e3;
+}
+.bg_message textarea {
+    margin: 5px 15px;
+    width: 300px;
+    height: 100px;
+    resize: none;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: transparent;
+    background: transparent;
+}
+.bg_message textarea:focus, .bg_message textarea:hover {
+    background: #f3f3f3;
+}
+/*
+textarea::-webkit-input-placeholder {
+    color: #000;
+} 
+textarea::-moz-placeholder {
+    color: #000;
+}
+*/
+form>span {
+    display: block;
+    margin: 5px 15px;
+    font-size: 1.2em;
+    text-shadow: #fff -1px 1px 2px;
+}
+.bg_message>div {
+    background-color: #ef7b6afa;
+    border-radius: 2px;
+    font-size: .6em;
+    margin-left: 31px;
+    font-family: Raleway-Bold;
+    text-align: center;
+    width: 120px;
+}
+.bg_message>h2 {
+    margin: 20px 10px;
+}
+button {
+    height: 25px;
+    border-radius: 15px;
+    padding: 3px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 0px 5px;
+}
+button:active, button:focus {
+    outline: none;
+}
+button:hover {
+    background-color: #f3f3f3;
+}
+form>button:last-child {
+    float: right;
+    margin-right: 15px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   Footer   ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+    position: relative;
+    /* top: -150px; */
+    width: 780px;
+    height: 222px;
+    background: url(img/footer_bg.jpg);
+    background-size: 100%;
+    color: #ffca3b;
+    margin: 0 auto;
+    text-align: left;
+}
+footer>a>p:first-child {
+    opacity: .2;
+    color: #fff;
+    position: absolute;
+    top: -40px;
+    right: -1px;
+    font-size: 1rem;
+}
+.address {
+    position: absolute;
+    top: 1em;
+    left: 15.5em;
+    font-size: .9rem;
+}
+.map {
+    position: absolute;
+    top: 75px;
+    right: 40px;
+    width: 125px;
+    color: #fff;
+    opacity: .4;
+}
+footer>ul>li>a {
+    color: #ffca3b;
+    line-height: 2;
+    opacity: .9;
+    padding: 2px 7px;
+}
+footer>ul>li>a:hover {
+    opacity: 1;
+    background-color: #ffca3b;
+    border-radius: 2px;
+    COLOR: #000;
+    font-weight: 600;
+}
+footer>p {
+    position: absolute;
+    font-size: 0.4rem;
+    top: 165px;
+    left: 230px;
+}
+.map>p {
+    margin-left: 3px;
+    font-size: .85rem;
+}
+.map:hover {
+    opacity: 1;
+}
+/*~~~~~~~~~~~~~~~~~    Media request   ~~~~~~~~~~~~~~~~~*/
+
+@media screen and (min-width: 980px) {
+    body {
+        background: url(img/bg-min.jpg), no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;}
+    header {width: 1500px;height: 350px;}
+    .sale {height: 220px;}
+    .welcome_text {
+        font-size: 1.125rem;
+        line-height: 1.3;
+        margin-top: 1.25rem;}
+    .welcome_to {
+        font-size: 1.85rem;
+        line-height: 2.5rem;
+        margin-top: 0.75rem;}
+    .banner_bg_welcome {
+        left: 65px;
+        top: 326px;
+        width: 312px;
+        padding: 15px;
+        border-radius: 10px;}
+    .social {
+        margin-right: 100px;
+        margin-top: 50px;}
+    .bg_social {
+        top: -350px;
+        width: 90px;
+        height: 28px;
+        padding-left: 15px;
+        padding-top: 7px;
+        margin-top: 33px;
+        margin-right: 253px;}
+    .social>li {margin-top: 7px;}
+    .social a>img {height: 32px;}
+    .logo {height: 360px;margin-left: 30px;}
+    header>div{left: 420px;}
+    header>div>img {height: 350px;}
+    .switch {
+        top: 150px;
+        right: 65px;
+        font-size: 1.8rem;}
+    .switch>li>a {padding: 7px 15px;}
+    .switch>li { margin-bottom: 25px;}
+    .switch>p {margin-top: 25px;}
+    .switch :first-child, .switch :first-child a{
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;}
+    .switch :last-child, .switch :nth-child(2) {
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;}
+    main {
+        width: 1500px;
+        height: 117%;
+        min-height: 1580px;}
+    .price {left: 145px;}
+    .title_prd {
+        font-size: 2.5rem;
+        margin-top: 31px;
+        margin-left: 40px;
+        margin-bottom: 15px;}
+    .Hair {
+        left: 465px;
+        top: 65px;
+        width: 870px;
+        height: 724px;}
+    .Nails {
+        left: 465px;
+        top: 375px;
+        width: 870px;
+        height: 400px;}
+    .Hair>div {
+        width: 270px;
+        height: 320px;
+        margin: 10px;}
+    .Nails>div {
+        width: 270px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 7px;}
+    .Hair>div:hover, .Nails>div:hover {box-shadow: 0 0 5px 2px #333;}
+    .Hair>div:hover>p:last-child, .Nails>div:hover>p:last-child {font-size: 1.45rem;}
+    .Hair>div>p {
+        top: 260px;
+        margin-left: 10px;
+        font-size: 1.15rem;
+        line-height: 1.286;
+        width: 145px;}
+    .Nails>div>p {
+        top: 5px;
+        margin-left: 10px;
+        font-size: 1.35rem;
+        line-height: .88;
+        width: 190px;}
+    .Nails>div>.price {
+        margin-left: -75px;
+        line-height: 1.2;
+        margin-top: 5px;}
+    #once {margin-top: 10px;}
+    .Hair>div>img {
+        margin: 10px;
+        width: 250px;
+        height: 235px;}
+    .bg_address {
+        left: 65px;
+        top: 536px;
+        width: 312px;
+        font-size: 1.47rem;
+        padding: 15px;
+        border-radius: 10px;}
+    .phone {
+        font-size: 1.27rem;
+        margin-left: 20px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        font-weight: 900;}
+    .email {
+        margin-left: 20px;
+        font-size: 26px;
+        margin-bottom: 20px;}
+    .bg_address>p>img {
+        width: 1.625rem;
+        top: 7px;}
+    .bg_address>p:last-child {font-size: 1.35rem;}
+    .bg_message {
+        top: 536px;
+        left: 250px;
+        width: 600px;
+        height: 680px;
+        font-size: 1.77rem;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 10px;
+        border-radius: 10px;}
+    .bg_message>h2 {margin: 30px 20px;}
+    .bg_message>form>div>input {
+        padding-left: 15px;
+        font-size: 1.176rem;
+        height: 28px;
+        width: 176px;
+        margin: 15px 20px;
+        border-radius: 6px;}
+    .bg_message textarea {
+        margin: 10px 25px;
+        width: 535px;
+        height: 180px;
+        font-size: 1.76rem;
+        padding-left: 10px;
+        border-radius: 10px;}
+    form>span {
+        margin: 10px 25px;
+        font-size: 1.5em;}
+    .bg_message>div {
+        margin-top: -20px;
+        border-radius: 4px;
+        font-size: .75rem;
+        width: 176px;}
+    button {
+        margin: 20px;
+        padding: 0px 10px;
+        height: 30px;
+        font-size: large;
+        border-radius: 30px;}
+    footer {
+        width: 1500px;
+        height: 444px;}
+    footer>a>p:first-child {
+        top: -80px;
+        right: -3px;
+        font-size: 2rem;}
+   .address {
+        top: .5em;
+        left: 15em;
+        font-size: 1.8rem;} 
+    .map {
+        top: 150px;
+        right: 150px;
+        width: 110px;}
+    footer>ul>li>a {
+        line-height: 2;
+        padding: 5px 15px;}
+    footer>ul>li>a:hover {border-radius: 5px;}
+    footer>p {
+        font-size: 0.6rem;
+        top: 320px;
+        left: 450px;}
+    .map>p {
+        margin-left: -8px;
+        font-size: 1.1rem;}
+}
